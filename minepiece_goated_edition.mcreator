@@ -12,15 +12,111 @@
           "src/main/resources/assets/minepiece_goated_edition/models/item/yoru.json"
         ]
       }
+    },
+    {
+      "name": "MinepieceCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minepiece_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SwordSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_slash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/SwordSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenBloodSyringe",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_blood_syringe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/GreenBloodSyringeItem.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/green_blood_syringe.json"
+        ]
+      }
+    },
+    {
+      "name": "SparkParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spark_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/client/particle/SparkParticleParticle.java",
+          "src/main/resources/assets/minepiece_goated_edition/particles/spark_particle.json"
+        ]
+      }
+    },
+    {
+      "name": "ThunderParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thunder_particle",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minepiece_goated_edition/particles/thunder_particle.json",
+          "src/main/java/net/mcreator/minepiecegoatededition/client/particle/ThunderParticleParticle.java"
+        ]
+      }
+    },
+    {
+      "name": "FlameParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flame_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/client/particle/FlameParticleParticle.java",
+          "src/main/resources/assets/minepiece_goated_edition/particles/flame_particle.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "swordslice-audio",
+      "files": [
+        "swordslice"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.minepiece_goated_edition.yoru": "Yoru"
+      "subtitles.swordslice-audio": "",
+      "item.minepiece_goated_edition.green_blood_syringe": "Green Blood Syringe",
+      "item.minepiece_goated_edition.yoru": "Yoru",
+      "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece"
     }
   },
   "foldersRoot": {

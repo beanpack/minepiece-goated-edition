@@ -1,0 +1,10 @@
+{
+  "swordslice-audio": {
+    "sounds": [
+      {
+        "name": "minepiece_goated_edition:swordslice",
+        "stream": false
+      }
+    ]
+  }
+}

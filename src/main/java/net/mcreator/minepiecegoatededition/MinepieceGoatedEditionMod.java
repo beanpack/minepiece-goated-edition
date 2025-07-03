@@ -17,6 +17,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.network.PacketBuffer;
 
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModTabs;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModSounds;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModParticleTypes;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModItems;
 
 import java.util.function.Supplier;
@@ -39,8 +42,12 @@ public class MinepieceGoatedEditionMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(new MinepieceGoatedEditionModFMLBusEvents(this));
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		MinepieceGoatedEditionModTabs.load();
+		MinepieceGoatedEditionModSounds.REGISTRY.register(bus);
 
 		MinepieceGoatedEditionModItems.REGISTRY.register(bus);
+
+		MinepieceGoatedEditionModParticleTypes.REGISTRY.register(bus);
 
 		bus.register(this);
 		// Start of user code block mod init

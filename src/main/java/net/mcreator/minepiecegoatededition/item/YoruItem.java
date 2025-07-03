@@ -2,12 +2,16 @@
 package net.mcreator.minepiecegoatededition.item;
 
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.PickaxeItem;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.IItemTier;
+import net.minecraft.entity.LivingEntity;
 
-public class YoruItem extends PickaxeItem {
+import net.mcreator.minepiecegoatededition.procedures.SwordSlashProcedure;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModTabs;
+
+public class YoruItem extends SwordItem {
 	public YoruItem() {
 		super(new IItemTier() {
 			public int getMaxUses() {
@@ -19,7 +23,7 @@ public class YoruItem extends PickaxeItem {
 			}
 
 			public float getAttackDamage() {
-				return 11f;
+				return 9f;
 			}
 
 			public int getHarvestLevel() {
@@ -33,6 +37,13 @@ public class YoruItem extends PickaxeItem {
 			public Ingredient getRepairMaterial() {
 				return Ingredient.fromStacks();
 			}
-		}, 1, -2.7f, new Item.Properties().group(ItemGroup.TOOLS).isImmuneToFire());
+		}, 3, -2.7f, new Item.Properties().group(MinepieceGoatedEditionModTabs.TAB_MINEPIECE_CREATIVE_TAB).isImmuneToFire());
+	}
+
+	@Override
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
+		boolean retval = super.onEntitySwing(itemstack, entity);
+		SwordSlashProcedure.execute(entity.world, entity);
+		return retval;
 	}
 }

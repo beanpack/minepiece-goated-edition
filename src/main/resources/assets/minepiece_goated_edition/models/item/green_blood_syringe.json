@@ -1,0 +1,7 @@
+{
+  "parent": "minepiece_goated_edition:custom/green_blood",
+  "textures": {
+    "0": "minepiece_goated_edition:block/greenblood_texture",
+    "particle": "minepiece_goated_edition:item/greenblood_texture"
+  }
+}
