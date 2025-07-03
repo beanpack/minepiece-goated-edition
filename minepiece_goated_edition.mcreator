@@ -1,0 +1,46 @@
+{
+  "mod_elements": [
+    {
+      "name": "Yoru",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoru",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/YoruItem.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/yoru.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.minepiece_goated_edition.yoru": "Yoru"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "minepiece_goated_edition",
+    "modName": "minepiece goated edition",
+    "version": "1.0.0",
+    "author": "beanpack, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.minepiecegoatededition"
+  },
+  "mcreatorVersion": 202400452410
+}
