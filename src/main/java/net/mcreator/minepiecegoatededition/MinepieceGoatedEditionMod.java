@@ -1,5 +1,7 @@
 package net.mcreator.minepiecegoatededition;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -21,6 +23,7 @@ import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModTabs;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModSounds;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModParticleTypes;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModItems;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -37,7 +40,7 @@ public class MinepieceGoatedEditionMod {
 	public static final String MODID = "minepiece_goated_edition";
 
 	public MinepieceGoatedEditionMod() {
-
+		GeckoLib.initialize();
 		// Start of user code block mod constructor
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(new MinepieceGoatedEditionModFMLBusEvents(this));
@@ -46,6 +49,7 @@ public class MinepieceGoatedEditionMod {
 		MinepieceGoatedEditionModSounds.REGISTRY.register(bus);
 
 		MinepieceGoatedEditionModItems.REGISTRY.register(bus);
+		MinepieceGoatedEditionModEntities.REGISTRY.register(bus);
 
 		MinepieceGoatedEditionModParticleTypes.REGISTRY.register(bus);
 

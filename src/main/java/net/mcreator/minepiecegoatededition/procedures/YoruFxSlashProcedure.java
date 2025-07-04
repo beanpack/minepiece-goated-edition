@@ -17,7 +17,7 @@ import net.minecraft.entity.Entity;
 import java.util.stream.Collectors;
 import java.util.Comparator;
 
-public class SwordSlashProcedure {
+public class YoruFxSlashProcedure {
 	public static void execute(IWorld world, Entity entity) {
 		if (entity == null)
 			return;
@@ -33,7 +33,8 @@ public class SwordSlashProcedure {
 		double circleDistanceConstant = 0;
 		double radianSteps = 0;
 		double arcStart = 0;
-		if (true) {
+		entity.getPersistentData().putDouble("ticksAlive", (entity.getPersistentData().getDouble("ticksAlive") + 1));
+		if (entity.getPersistentData().getDouble("ticksAlive") < 40) {
 			circleDistanceConstant = 3;
 			rollAngle = 135;
 			horizontalOffsetMag = 0;
@@ -73,7 +74,7 @@ public class SwordSlashProcedure {
 					for (Entity entityiterator : world.getLoadedEntitiesWithinAABB(Entity.class, new AxisAlignedBB(_center, _center).grow(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.getDistanceSq(_center)))
 							.collect(Collectors.toList())) {
 						if (!(entity == entityiterator)) {
-							entityiterator.attackEntityFrom(DamageSource.GENERIC, 2);
+							entity.attackEntityFrom(DamageSource.GENERIC, 13);
 							if (i < 1) {
 								if (world instanceof World) {
 									if (!((World) world).isRemote()) {
@@ -90,6 +91,8 @@ public class SwordSlashProcedure {
 				}
 				i = i + radianSteps;
 			}
+		} else {
+			entity.attackEntityFrom(DamageSource.GENERIC, 999);
 		}
 	}
 }

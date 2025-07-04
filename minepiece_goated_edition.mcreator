@@ -96,9 +96,92 @@
           "src/main/resources/assets/minepiece_goated_edition/particles/flame_particle.json"
         ]
       }
+    },
+    {
+      "name": "Mp1000",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_1000",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp1000Item.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_1000.json"
+        ]
+      }
+    },
+    {
+      "name": "YoruAbility",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoru_ability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/YoruAbilityProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "YoruFx",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoru_fx",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/YoruFxProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "YoruFxSlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yoru_fx_slash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/YoruFxSlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CowSmile",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cow_smile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/entity/CowSmileEntity.java",
+          "src/main/java/net/mcreator/minepiecegoatededition/client/renderer/CowSmileRenderer.java",
+          "src/main/java/net/mcreator/minepiecegoatededition/entity/model/CowSmileModel.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/cow_smile_spawn_egg.json"
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "ticksAlive",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [
     {
       "name": "swordslice-audio",
@@ -113,9 +196,12 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
+      "item.minepiece_goated_edition.mp_1000": "1000 mp",
       "subtitles.swordslice-audio": "",
       "item.minepiece_goated_edition.green_blood_syringe": "Green Blood Syringe",
       "item.minepiece_goated_edition.yoru": "Yoru",
+      "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg",
+      "entity.minepiece_goated_edition.cow_smile": "Cow Smile",
       "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece"
     }
   },
@@ -134,8 +220,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.minepiecegoatededition"
   },
   "mcreatorVersion": 202400452410

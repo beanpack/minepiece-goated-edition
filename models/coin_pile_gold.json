@@ -1,0 +1,10 @@
+{
+	"format_version": "1.21.6",
+	"credit": "Made with Blockbench",
+	"parent": "item/generated",
+	"textures": {
+		"1": "Downloads/coin_pile_gold",
+		"layer0": "coins:item/coin_pile_gold",
+		"particle": "Downloads/coin_pile_gold"
+	}
+}
