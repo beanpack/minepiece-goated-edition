@@ -22,6 +22,7 @@ import net.minecraft.network.PacketBuffer;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModTabs;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModSounds;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModParticleTypes;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModMobEffects;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModItems;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModEntities;
 
@@ -50,6 +51,8 @@ public class MinepieceGoatedEditionMod {
 
 		MinepieceGoatedEditionModItems.REGISTRY.register(bus);
 		MinepieceGoatedEditionModEntities.REGISTRY.register(bus);
+
+		MinepieceGoatedEditionModMobEffects.REGISTRY.register(bus);
 
 		MinepieceGoatedEditionModParticleTypes.REGISTRY.register(bus);
 

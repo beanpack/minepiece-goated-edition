@@ -172,6 +172,48 @@
           "src/main/resources/assets/minepiece_goated_edition/models/item/cow_smile_spawn_egg.json"
         ]
       }
+    },
+    {
+      "name": "TestOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/TestOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Test",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/potion/TestMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "Gravity",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gravity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/potion/GravityMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -200,9 +242,11 @@
       "subtitles.swordslice-audio": "",
       "item.minepiece_goated_edition.green_blood_syringe": "Green Blood Syringe",
       "item.minepiece_goated_edition.yoru": "Yoru",
+      "effect.minepiece_goated_edition.gravity": "Gravity",
       "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg",
       "entity.minepiece_goated_edition.cow_smile": "Cow Smile",
-      "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece"
+      "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece",
+      "effect.minepiece_goated_edition.test": "Gravity"
     }
   },
   "foldersRoot": {
