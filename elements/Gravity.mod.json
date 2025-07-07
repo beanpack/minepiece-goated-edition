@@ -12,8 +12,8 @@
     "mobEffectCategory": "NEUTRAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
-    "isCuredByMilk": true,
-    "isProtectedByTotem": true,
+    "isCuredByMilk": false,
+    "isProtectedByTotem": false,
     "isCuredbyHoney": false,
     "modifiers": [],
     "onActiveTick": {
