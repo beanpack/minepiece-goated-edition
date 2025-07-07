@@ -227,6 +227,71 @@
           "src/main/java/net/mcreator/minepiecegoatededition/item/YakuzaKasenItem.java"
         ]
       }
+    },
+    {
+      "name": "Mp500",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_500",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp500Item.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_500.json"
+        ]
+      }
+    },
+    {
+      "name": "Mp400",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_400",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp400Item.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_400.json"
+        ]
+      }
+    },
+    {
+      "name": "Mp300",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_300",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_300.json",
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp300Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Mp200",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_200",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_200.json",
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp200Item.java"
+        ]
+      }
+    },
+    {
+      "name": "Mp100",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mp_100",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/Mp100Item.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/mp_100.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -256,11 +321,16 @@
       "item.minepiece_goated_edition.green_blood_syringe": "Green Blood Syringe",
       "item.minepiece_goated_edition.yoru": "Yoru",
       "effect.minepiece_goated_edition.gravity": "Gravity",
-      "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg",
       "entity.minepiece_goated_edition.cow_smile": "Cow Smile",
       "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece",
       "effect.minepiece_goated_edition.test": "Gravity",
-      "item.minepiece_goated_edition.yakuza_kasen": "Yakuza Kasen"
+      "item.minepiece_goated_edition.yakuza_kasen": "Yakuza Kasen",
+      "item.minepiece_goated_edition.mp_500": "500 mp",
+      "item.minepiece_goated_edition.mp_400": "400 mp",
+      "item.minepiece_goated_edition.mp_300": "300 mp",
+      "item.minepiece_goated_edition.mp_200": "200 mp",
+      "item.minepiece_goated_edition.mp_100": "100 mp",
+      "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg"
     }
   },
   "foldersRoot": {

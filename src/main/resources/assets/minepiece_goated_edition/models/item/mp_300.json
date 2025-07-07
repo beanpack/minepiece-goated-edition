@@ -1,0 +1,7 @@
+{
+  "parent": "minepiece_goated_edition:custom/test_300_dollars",
+  "textures": {
+    "1": "minepiece_goated_edition:block/mp1000",
+    "particle": "minepiece_goated_edition:item/mp1000"
+  }
+}
