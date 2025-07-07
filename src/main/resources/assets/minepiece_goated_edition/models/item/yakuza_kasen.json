@@ -1,0 +1,7 @@
+{
+  "parent": "minepiece_goated_edition:custom/sword_fujitora_blade_model",
+  "textures": {
+    "2": "minepiece_goated_edition:block/sword_fujitora",
+    "particle": "minepiece_goated_edition:item/sword_fujitora"
+  }
+}

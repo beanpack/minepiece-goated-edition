@@ -214,6 +214,19 @@
           "src/main/java/net/mcreator/minepiecegoatededition/potion/GravityMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "YakuzaKasen",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yakuza_kasen",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minepiece_goated_edition/models/item/yakuza_kasen.json",
+          "src/main/java/net/mcreator/minepiecegoatededition/item/YakuzaKasenItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -246,7 +259,8 @@
       "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg",
       "entity.minepiece_goated_edition.cow_smile": "Cow Smile",
       "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece",
-      "effect.minepiece_goated_edition.test": "Gravity"
+      "effect.minepiece_goated_edition.test": "Gravity",
+      "item.minepiece_goated_edition.yakuza_kasen": "Yakuza Kasen"
     }
   },
   "foldersRoot": {
