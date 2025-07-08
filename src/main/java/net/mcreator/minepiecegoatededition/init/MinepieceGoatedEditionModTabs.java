@@ -6,9 +6,9 @@ package net.mcreator.minepiecegoatededition.init;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.block.Blocks;
 
 public class MinepieceGoatedEditionModTabs {
 	public static ItemGroup TAB_MINEPIECE_CREATIVE_TAB;
@@ -18,7 +18,7 @@ public class MinepieceGoatedEditionModTabs {
 			@Override
 			@OnlyIn(Dist.CLIENT)
 			public ItemStack createIcon() {
-				return new ItemStack(Blocks.PACKED_ICE);
+				return new ItemStack(Items.PUMPKIN_PIE);
 			}
 
 			@Override

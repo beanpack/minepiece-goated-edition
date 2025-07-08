@@ -4,7 +4,7 @@
   "definition": {
     "name": "minepiece",
     "icon": {
-      "value": "Blocks.PACKED_ICE"
+      "value": "Items.PUMPKIN_PIE"
     },
     "showSearch": true
   }

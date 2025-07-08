@@ -1,0 +1,23 @@
+{
+  "_fv": 73,
+  "_type": "particle",
+  "definition": {
+    "texture": "pipo-btleffect025",
+    "animate": true,
+    "frameDuration": 3,
+    "width": 3.0,
+    "height": 3.0,
+    "scale": {
+      "fixedValue": 1.4000000000000001
+    },
+    "speedFactor": 0.1,
+    "gravity": 0.2,
+    "maxAge": 24,
+    "maxAgeDiff": 0,
+    "angularVelocity": -0.1,
+    "angularAcceleration": 0.01,
+    "canCollide": true,
+    "alwaysShow": true,
+    "renderType": "TRANSLUCENT"
+  }
+}

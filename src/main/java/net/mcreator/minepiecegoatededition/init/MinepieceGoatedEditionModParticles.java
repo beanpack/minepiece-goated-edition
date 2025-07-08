@@ -10,6 +10,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.minepiecegoatededition.client.particle.WaterParticleParticle;
 import net.mcreator.minepiecegoatededition.client.particle.ThunderParticleParticle;
 import net.mcreator.minepiecegoatededition.client.particle.SparkParticleParticle;
 import net.mcreator.minepiecegoatededition.client.particle.FlameParticleParticle;
@@ -21,5 +22,6 @@ public class MinepieceGoatedEditionModParticles {
 		Minecraft.getInstance().particles.registerFactory(MinepieceGoatedEditionModParticleTypes.SPARK_PARTICLE.get(), SparkParticleParticle::factory);
 		Minecraft.getInstance().particles.registerFactory(MinepieceGoatedEditionModParticleTypes.THUNDER_PARTICLE.get(), ThunderParticleParticle::factory);
 		Minecraft.getInstance().particles.registerFactory(MinepieceGoatedEditionModParticleTypes.FLAME_PARTICLE.get(), FlameParticleParticle::factory);
+		Minecraft.getInstance().particles.registerFactory(MinepieceGoatedEditionModParticleTypes.WATER_PARTICLE.get(), WaterParticleParticle::factory);
 	}
 }

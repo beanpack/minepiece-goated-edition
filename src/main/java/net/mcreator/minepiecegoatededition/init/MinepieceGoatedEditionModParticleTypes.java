@@ -17,4 +17,5 @@ public class MinepieceGoatedEditionModParticleTypes {
 	public static final RegistryObject<BasicParticleType> SPARK_PARTICLE = REGISTRY.register("spark_particle", () -> new BasicParticleType(true));
 	public static final RegistryObject<BasicParticleType> THUNDER_PARTICLE = REGISTRY.register("thunder_particle", () -> new BasicParticleType(true));
 	public static final RegistryObject<BasicParticleType> FLAME_PARTICLE = REGISTRY.register("flame_particle", () -> new BasicParticleType(true));
+	public static final RegistryObject<BasicParticleType> WATER_PARTICLE = REGISTRY.register("water_particle", () -> new BasicParticleType(true));
 }
