@@ -1,40 +1,6 @@
 
 package net.mcreator.minepiecegoatededition.block;
 
-import net.minecraftforge.common.PlantType;
-import net.minecraftforge.common.ForgeHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Direction;
-import net.minecraft.item.ItemStack;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.block.material.MaterialColor;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.SugarCaneBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.IGrowable;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.minepiecegoatededition.procedures.DarkRootPlantEffectProcedure;
-import net.mcreator.minepiecegoatededition.procedures.AshParticleTickUpdateProcedure;
-import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModItems;
-import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModBlocks;
-
-import java.util.Random;
-
 public class DarkRootBlock extends SugarCaneBlock implements IGrowable {
 	public DarkRootBlock() {
 		super(Block.Properties.create(Material.PLANTS, MaterialColor.GRAY).tickRandomly().sound(SoundType.PLANT).zeroHardnessAndResistance().setLightLevel(s -> 1).doesNotBlockMovement());
@@ -62,7 +28,7 @@ public class DarkRootBlock extends SugarCaneBlock implements IGrowable {
 
 	@Override
 	public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-		return new ItemStack(MinepieceGoatedEditionModItems.DARK_ROOT_FRUIT.get());
+		return new ItemStack(MinepieceGoatedEditionModItems.DELETED_MOD_ELEMENT.get());
 	}
 
 	@Override

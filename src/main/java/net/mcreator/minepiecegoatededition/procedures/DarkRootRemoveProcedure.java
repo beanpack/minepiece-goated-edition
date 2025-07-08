@@ -1,10 +1,6 @@
 package net.mcreator.minepiecegoatededition.procedures;
 
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.entity.Entity;
-import net.minecraft.command.FunctionObject;
-
-import java.util.Optional;
+import net.minecraftforge.eventbus.api.Event;
 
 public class DarkRootRemoveProcedure {
 	public static void execute(Entity entity) {

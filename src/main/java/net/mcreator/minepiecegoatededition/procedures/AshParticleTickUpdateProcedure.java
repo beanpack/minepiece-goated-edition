@@ -1,8 +1,6 @@
 package net.mcreator.minepiecegoatededition.procedures;
 
-import net.minecraft.world.IWorld;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class AshParticleTickUpdateProcedure {
 	public static void execute(IWorld world, Entity entity) {

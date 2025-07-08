@@ -1,9 +1,6 @@
 package net.mcreator.minepiecegoatededition.procedures;
 
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class DarkRootPlantEffectProcedure {
 	public static void execute(Entity entity) {
