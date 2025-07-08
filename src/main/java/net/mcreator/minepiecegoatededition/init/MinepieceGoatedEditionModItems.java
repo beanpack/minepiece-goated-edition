@@ -9,7 +9,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
+import net.minecraft.block.Block;
 
 import net.mcreator.minepiecegoatededition.item.YoruItem;
 import net.mcreator.minepiecegoatededition.item.YakuzaKasenItem;
@@ -20,6 +23,7 @@ import net.mcreator.minepiecegoatededition.item.Mp200Item;
 import net.mcreator.minepiecegoatededition.item.Mp100Item;
 import net.mcreator.minepiecegoatededition.item.Mp1000Item;
 import net.mcreator.minepiecegoatededition.item.GreenBloodSyringeItem;
+import net.mcreator.minepiecegoatededition.item.DarkRootFruitItem;
 import net.mcreator.minepiecegoatededition.MinepieceGoatedEditionMod;
 
 public class MinepieceGoatedEditionModItems {
@@ -33,7 +37,13 @@ public class MinepieceGoatedEditionModItems {
 	public static final RegistryObject<Item> MP_300 = REGISTRY.register("mp_300", () -> new Mp300Item());
 	public static final RegistryObject<Item> MP_200 = REGISTRY.register("mp_200", () -> new Mp200Item());
 	public static final RegistryObject<Item> MP_100 = REGISTRY.register("mp_100", () -> new Mp100Item());
+	public static final RegistryObject<Item> DARK_ROOT = block(MinepieceGoatedEditionModBlocks.DARK_ROOT, MinepieceGoatedEditionModTabs.TAB_MINEPIECE_CREATIVE_TAB);
+	public static final RegistryObject<Item> DARK_ROOT_FRUIT = REGISTRY.register("dark_root_fruit", () -> new DarkRootFruitItem());
 	public static final RegistryObject<Item> COW_SMILE_SPAWN_EGG = REGISTRY.register("cow_smile_spawn_egg", () -> new ForgeSpawnEggItem(MinepieceGoatedEditionModEntities.COW_SMILE, -6737152, -1, new Item.Properties().group(null)));
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static RegistryObject<Item> block(RegistryObject<Block> block, ItemGroup tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().group(tab)));
+	}
 }

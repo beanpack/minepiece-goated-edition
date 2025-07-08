@@ -25,6 +25,7 @@ import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModParticl
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModMobEffects;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModItems;
 import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModEntities;
+import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -48,7 +49,7 @@ public class MinepieceGoatedEditionMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MinepieceGoatedEditionModTabs.load();
 		MinepieceGoatedEditionModSounds.REGISTRY.register(bus);
-
+		MinepieceGoatedEditionModBlocks.REGISTRY.register(bus);
 		MinepieceGoatedEditionModItems.REGISTRY.register(bus);
 		MinepieceGoatedEditionModEntities.REGISTRY.register(bus);
 

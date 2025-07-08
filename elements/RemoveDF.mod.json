@@ -1,0 +1,9 @@
+{
+  "_fv": 73,
+  "_type": "function",
+  "definition": {
+    "code": "# Enter the function code here\n/mmnm removedf",
+    "name": "remove_df",
+    "namespace": "mod"
+  }
+}

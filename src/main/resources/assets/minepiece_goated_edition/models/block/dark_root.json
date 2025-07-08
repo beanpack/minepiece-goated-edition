@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "minepiece_goated_edition:block/darkroot_stage_2",
+    "particle": "minepiece_goated_edition:block/darkroot_stage_2"
+  }
+}

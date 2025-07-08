@@ -305,6 +305,105 @@
           "src/main/java/net/mcreator/minepiecegoatededition/client/particle/WaterParticleParticle.java"
         ]
       }
+    },
+    {
+      "name": "DarkRoot",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_root",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/minepiece_goated_edition/models/block/dark_root.json",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/dark_root.json",
+          "src/main/java/net/mcreator/minepiecegoatededition/block/DarkRootBlock.java",
+          "src/main/resources/assets/minepiece_goated_edition/blockstates/dark_root.json",
+          "src/main/resources/data/minepiece_goated_edition/loot_tables/blocks/dark_root.json"
+        ]
+      }
+    },
+    {
+      "name": "DarkRootPlantEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_root_plant_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/DarkRootPlantEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveDF",
+      "type": "function",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_df",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minepiece_goated_edition/functions/remove_df.mcfunction"
+        ]
+      }
+    },
+    {
+      "name": "DarkRootRemove",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_root_remove",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/DarkRootRemoveProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkRootFruit",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_root_fruit",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/item/DarkRootFruitItem.java",
+          "src/main/resources/assets/minepiece_goated_edition/models/item/dark_root_fruit.json"
+        ]
+      }
+    },
+    {
+      "name": "AshParticleTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash_particle_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/minepiecegoatededition/procedures/AshParticleTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -335,6 +434,7 @@
       "item.minepiece_goated_edition.yoru": "Yoru",
       "effect.minepiece_goated_edition.gravity": "Gravity",
       "entity.minepiece_goated_edition.cow_smile": "Cow Smile",
+      "block.minepiece_goated_edition.dark_root": "Dark Root",
       "itemGroup.minepiece_goated_edition.minepiece_creative_tab": "minepiece",
       "effect.minepiece_goated_edition.test": "Gravity",
       "item.minepiece_goated_edition.yakuza_kasen": "Yakuza Kasen",
@@ -342,6 +442,7 @@
       "item.minepiece_goated_edition.mp_400": "400 mp",
       "item.minepiece_goated_edition.mp_300": "300 mp",
       "item.minepiece_goated_edition.mp_200": "200 mp",
+      "item.minepiece_goated_edition.dark_root_fruit": "Dark Root ",
       "item.minepiece_goated_edition.mp_100": "100 mp",
       "item.minepiece_goated_edition.cow_smile_spawn_egg": "Cow Smile Spawn Egg"
     }
