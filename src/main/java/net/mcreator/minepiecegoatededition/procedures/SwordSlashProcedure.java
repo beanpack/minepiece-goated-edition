@@ -11,10 +11,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
-import net.minecraft.particles.BasicParticleType;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.entity.Entity;
-
-import net.mcreator.minepiecegoatededition.init.MinepieceGoatedEditionModParticleTypes;
 
 import java.util.stream.Collectors;
 import java.util.Comparator;
@@ -63,7 +61,7 @@ public class SwordSlashProcedure {
 					sign = 1;
 				}
 				if (world instanceof ServerWorld)
-					((ServerWorld) world).spawnParticle((BasicParticleType) (MinepieceGoatedEditionModParticleTypes.WATER_PARTICLE.get()),
+					((ServerWorld) world).spawnParticle(ParticleTypes.SMOKE,
 							(dMajor * Math.cos(i) * Math.cos(arcStart) - d * Math.sin(i) * Math.sin(arcStart) + entity.getPosX() + horizontalOffsetMag * Math.sin(Math.toRadians(entity.rotationYaw + 180 + horizontalOffsetDir))),
 							(sign * Math.sqrt(Math.abs(Math.sin(Math.toRadians(rollAngle))) * (Math.pow(dMajor, 2) - Math.pow(dMajor * Math.cos(i), 2))) + entity.getPosY() + 1 + verticalOffset),
 							(dMajor * Math.cos(i) * Math.sin(arcStart) + d * Math.sin(i) * Math.cos(arcStart) + entity.getPosZ() - horizontalOffsetMag * Math.cos(Math.toRadians(entity.rotationYaw + 180 + horizontalOffsetDir))), 1, 0, 0, 0, 0);
